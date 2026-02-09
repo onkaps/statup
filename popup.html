@@ -4,18 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <title>StatUp</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            min-width: 200px;
-            padding: 12px;
-        }
-    </style>
+    <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
-    <h3>Hello World </h3>
-    <p>Your Chrome extension is running.</p>
+    <h3>StatUp Setup</h3>
+
+    <label>
+        LeetCode Username
+        <input type="text" id="leetcodeInput" placeholder="leetcode_username" />
+    </label>
+
+    <label>
+        Codeforces Handle
+        <input type="text" id="codeforcesInput" placeholder="codeforces_handle" />
+    </label>
+
+    <label>
+        CodeChef Username
+        <input type="text" id="codechefInput" placeholder="codechef_username" />
+    </label>
+
+    <button id="saveBtn">Save Settings</button>
+
+    <div id="status" class="status"></div>
 
     <script src="popup.js"></script>
 </body>
