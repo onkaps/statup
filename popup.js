@@ -32,4 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
             status.style.color = "green";
         });
     });
+
+    chrome.runtime.sendMessage(
+        {
+            type: "PING",
+            data: "test"
+        },
+        (response) => {
+            console.log("Background reply: ", response);
+        }
+    );
 });
