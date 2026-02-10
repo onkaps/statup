@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
             leetcodeInput.value = config.usernames.leetcode || "";
             codeforcesInput.value = config.usernames.codeforces || "";
             codechefInput.value = config.usernames.codechef || "";
-            if (config.username.leetcode) {
-                fetchLeetCode(config.username.leetcode);
+            if (config.usernames.leetcode) {
+                fetchLeetCode(config.usernames.leetcode);
             }
 
-            if (config.username.codeforces) {
-                fetchCodeforces(config.username.codeforces);
+            if (config.usernames.codeforces) {
+                fetchCodeforces(config.usernames.codeforces);
             }
         }
 
